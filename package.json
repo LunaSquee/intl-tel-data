@@ -1,0 +1,40 @@
+{
+  "name": "intl-tel-data",
+  "description": "International telephone number prefix utilities and flags",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/intl-tel-data.umd.cjs",
+  "module": "./dist/intl-tel-data.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/intl-tel-data.js",
+      "require": "./dist/intl-tel-data.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    },
+    "./dist/style.scss": {
+      "import": "./dist/style.scss",
+      "require": "./dist/style.scss"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "sass": "^1.64.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.1",
+    "vite-plugin-static-copy": "^0.17.0"
+  }
+}
